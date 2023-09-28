@@ -14,7 +14,9 @@
 
         Array.prototype.forEach.call(datesClasses, element => {
     
-            element.innerHTML = dayjs().format('YYYY/MM/DD HH:mm:ss A')
+            // element.innerHTML = dayjs().format('YYYY/MM/DD');
+            element.innerHTML = dayjs().format('YYYY/MM/DD <br> HH:mm:ss A')
+            // element.innerHTML = dayjs().format('HH:mm:ss A')
 
         })
     </script>
