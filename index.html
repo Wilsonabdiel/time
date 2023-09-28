@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!--This is my html code-->
+        <div class="d-flex event">
+            <span class="mr-3 text-danger date"></span><br>
+            <span class="text-danger">24°C, Fort Portal</span>
+        </div>
+    </body>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script>
+
+        let datesClasses = document.getElementsByClassName("date")
+
+        Array.prototype.forEach.call(datesClasses, element => {
+    
+            element.innerHTML = dayjs().format('YYYY/MM/DD HH:mm:ss A')
+
+        })
+    </script>
+</html>
